@@ -8,9 +8,13 @@ This file provides context and conventions for AI assistants (Claude Code and si
 
 **Status:** Newly initialized repository — no source code has been committed yet.
 
-**Remote:** `http://local_proxy@127.0.0.1:43818/git/kohiro00/test`
+**Remote:** `http://local_proxy@127.0.0.1:39051/git/kohiro00/test`
 
-Update this section once the project type, purpose, and tech stack are established.
+**Default branch:** `master`
+
+**Last updated:** 2026-03-02
+
+This file will be updated as the project evolves. Do not infer any language, framework, or architecture that is not supported by actual files in the repository.
 
 ---
 
@@ -18,7 +22,7 @@ Update this section once the project type, purpose, and tech stack are establish
 
 _To be filled in once source code is added._
 
-When code is added, document the directory layout here. Example format:
+When code is added, document the directory layout here. Example:
 
 ```
 .
@@ -34,10 +38,10 @@ When code is added, document the directory layout here. Example format:
 
 _To be filled in once the project is initialized._
 
-Typical setup steps to document here:
-1. Prerequisites (runtime versions, system dependencies)
+Typical steps to document:
+1. Prerequisites (language runtime versions, system dependencies)
 2. Install dependencies
-3. Configure environment variables (`.env.example`)
+3. Configure environment variables (reference `.env.example`)
 4. Run the application locally
 
 ---
@@ -45,8 +49,6 @@ Typical setup steps to document here:
 ## Common Commands
 
 _To be filled in once tooling is established._
-
-Document the commands used daily by contributors:
 
 | Purpose | Command |
 |---------|---------|
@@ -62,11 +64,11 @@ Document the commands used daily by contributors:
 
 _To be filled in once a test framework is chosen._
 
-Document:
+Document here:
 - Test framework in use
-- How to run all tests
+- How to run the full test suite
 - How to run a single test file or test case
-- Test coverage expectations or thresholds
+- Coverage expectations or required thresholds
 
 ---
 
@@ -74,22 +76,30 @@ Document:
 
 _To be filled in once a language and style guide are established._
 
-Until then, follow these universal conventions:
+Universal conventions to follow in the meantime:
 - Prefer small, focused functions/modules with a single responsibility
-- Avoid over-engineering — write the minimum code that solves the problem
-- Do not add comments to self-evident code; comment only non-obvious logic
+- Write the minimum code that solves the problem — avoid over-engineering
+- Do not comment self-evident code; comment only non-obvious logic
 - Keep dependencies minimal and justified
-- Do not commit secrets, credentials, or environment-specific values
+- Never commit secrets, credentials, or environment-specific values
 
 ---
 
 ## Git Workflow
 
-- **Development branch naming:** `claude/<description>-<session-id>`
-- **Main/default branch:** confirm once established (commonly `main` or `master`)
-- Write clear, descriptive commit messages explaining *why* a change was made
-- Never force-push to the main branch
+- **Default branch:** `master`
+- **Feature branch naming:** `claude/<description>-<session-id>`
+- **Active branches:**
+  - `master` — stable base
+  - `claude/claude-md-mm8lq3bep2vluuge-czeF1` — CLAUDE.md setup
+
+### Rules
+
+- Write clear, descriptive commit messages that explain *why* a change was made
+- Never force-push to `master`
 - Never skip commit hooks (`--no-verify`) without explicit instruction
+- Push using: `git push -u origin <branch-name>`
+- Only push to branches prefixed with `claude/` during AI-assisted sessions
 
 ---
 
@@ -97,7 +107,7 @@ Until then, follow these universal conventions:
 
 _To be filled in once the project has configuration requirements._
 
-Document expected environment variables and point to an `.env.example` file when one exists.
+Document expected variables here and reference a committed `.env.example` file.
 
 ---
 
@@ -106,18 +116,34 @@ Document expected environment variables and point to an `.env.example` file when
 _To be filled in once a pipeline is configured._
 
 Document:
-- CI provider (GitHub Actions, CircleCI, etc.)
-- Which checks run on pull requests
+- CI provider (e.g., GitHub Actions, CircleCI)
+- Checks that run on pull requests
 - Deployment targets and triggers
 
 ---
 
 ## Notes for AI Assistants
 
-- This repository is empty. Do not assume any specific language, framework, or architecture without evidence from actual files.
-- When source code is added, update this file to reflect the real project structure and conventions.
+### General guidance
+
+- **This repository is empty.** Do not assume any specific language, framework, or architecture without evidence from actual files.
 - Always read existing files before editing them.
 - Prefer editing existing files over creating new ones.
-- Avoid generating files unless explicitly needed.
+- Avoid generating files unless explicitly requested.
 - Do not introduce security vulnerabilities (SQL injection, XSS, command injection, insecure dependencies, etc.).
 - Confirm with the user before taking destructive or hard-to-reverse actions (deleting files, force-pushing, dropping data).
+
+### When source code is added
+
+Update this CLAUDE.md to reflect:
+- The actual project structure (languages, frameworks, entry points)
+- Real setup steps and common commands
+- The test framework and how to run tests
+- Lint/format tooling and configuration file locations
+- Any environment variables required
+
+### Branch and push rules
+
+- Develop on the designated `claude/<description>-<session-id>` branch
+- Never push to `master` directly during an AI session
+- Use `git push -u origin <branch-name>` for all pushes
