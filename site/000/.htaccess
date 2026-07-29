@@ -1,0 +1,29 @@
+# MIME タイプの明示
+#
+# サーバーが .css を text/css 以外（text/plain 等）で返すと、ブラウザは
+# ファイルを取得できていてもスタイルの適用を拒否します。画像は内容から
+# 形式を判別するため影響を受けず、「画像は出るが CSS だけ効かない」という
+# 症状になります。これを防ぐため、配信する拡張子を明示します。
+#
+# Apache 用です。nginx の場合このファイルは無視されるため、サーバー側の
+# mime.types で同等の設定を行ってください。
+
+<IfModule mod_mime.c>
+  AddType text/css                  .css
+  AddType application/javascript    .js
+  AddType text/html                 .html
+  AddType image/png                 .png
+  AddType image/gif                 .gif
+  AddType image/jpeg                .jpg .jpeg
+  AddType image/x-icon              .ico
+  AddType image/svg+xml             .svg
+</IfModule>
+
+# 文字コード（このサイトは全ページ UTF-8）
+AddDefaultCharset UTF-8
+<IfModule mod_mime.c>
+  AddCharset UTF-8 .html .css .js
+</IfModule>
+
+# ディレクトリのインデックスファイル
+DirectoryIndex index.html
