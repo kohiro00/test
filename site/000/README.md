@@ -8,8 +8,9 @@
 ```
 site/000/
 ├── index.html     ← 成形済みトップページ
-├── assets/        ← 画像・CSS・JS（※要投入。下記参照）
-├── ASSETS.txt     ← index.html が参照する全アセット一覧（38件）
+├── assets/        ← 画像・CSS・JS（34ファイル投入済み）
+├── ASSETS.txt     ← index.html が参照するアセット一覧
+├── MISSING.txt    ← 未取得のアセット一覧（129件）
 └── README.md
 ```
 
@@ -20,64 +21,97 @@ https://nurse-rikox.web-rider.biz/000/            → index.html
 https://nurse-rikox.web-rider.biz/000/assets/...  → 画像・CSS・JS
 ```
 
-## assets/ が空になっている理由
+## 現状
 
-アップロードされたのは HTML 単体で、対になる `ナースが教える仕事術_files`
-フォルダが含まれていませんでした。またこの環境からは web.archive.org への
-通信が遮断されているため、こちらでの取得もできていません。
+投入いただいた89ファイルを取り込み、次の状態です。
 
-`index.html` 側のパス書き換えは完了しているので、**元のフォルダの中身を
-`assets/` へ入れれば、そのまま表示されます。**
+| 項目 | 件数 |
+|------|------|
+| 配信可能なアセット | **34** |
+| 除外した不要ファイル | 54 |
+| 未取得のアセット | **129** |
 
-### 投入手順
+**ページ本体（HTML・CSS・JS・記事サムネイル・ロゴ・サイドアイコン・バナー）は
+揃っており、表示できます。** 不足しているのは下記の129件です。
 
-保存フォルダ `ナースが教える仕事術_files` が手元にある場合は、リポジトリ
-ルートで次を実行すると、ファイル名の正規化（`.ダウンロード` の除去、
-`(1)` の重複サフィックス除去）と不要ファイルの除外を自動で行います。
+### 不足1: CSSが参照するテーマ画像（126件）
+
+`design.css` / `mobile.css` / `advanced.css` が背景・アイコン類として参照する
+画像です。保存フォルダに含まれていませんでした（ブラウザの「ページを保存」は、
+そのページで実際に描画された画像しか保存しないため、記事ページ用や
+ホバー状態用の画像が漏れます）。
+
+不足すると、背景のグラデーション・吹き出し・チェックアイコン等が表示されず、
+**レイアウトは保たれるものの見た目が簡素になります。**
+
+元サイトでの配置は次のとおりです（すべて `wp-content/themes/nurse/` 配下）。
+
+| 元のパス | 件数 |
+|----------|------|
+| `images/common/` | 背景・吹き出し等 |
+| `images/icon/` | アイコン類 |
+| `images/article018/` | 記事018用の図版 |
+
+完全な一覧は `MISSING.txt` を参照してください。
+
+### 不足2: ブランディング画像（3件）
+
+| ファイル | 用途 |
+|----------|------|
+| `favicon.ico` | タブアイコン |
+| `home-icon.png` | iOS ホーム画面アイコン |
+| `ogp.png` | SNS シェア時のサムネイル |
+
+これらは `<link rel="icon">` や `<meta property="og:image">` からの参照で、
+ブラウザの保存対象外です。**表示には影響しません。** 代替画像を勝手に
+当てるとサイトの見せ方が変わるため、そのままにしてあります。
+
+なお `twitter:image` が参照していた `20170825_ill21.png` は、同一画像の
+リサイズ版 `20170825_ill21-640x520.png` が揃っていたため、そちらを指すよう
+自動で差し替えています。
+
+## 不足分の補い方
+
+`MISSING.txt` の129件を集めて `assets/` に入れ、再実行するだけです。
+サブフォルダ構造は不要で、**ファイル名だけで配置してください**（CSS側の
+パスは `/000/assets/<ファイル名>` に統一済み。126件のファイル名に重複が
+ないことは確認済みです）。
 
 ```bash
 python3 scripts/build_site.py \
   "ナースが教える仕事術.html" \
-  --assets "ナースが教える仕事術_files" \
+  --assets site/000/assets \
   --out site/000
 ```
 
-実行後、不足ファイルがあれば標準出力に一覧が出ます。
+スクリプトは冪等です。ファイル名の正規化（`.ダウンロード` の除去、`(1)` の
+重複サフィックス除去）、不要ファイルの除外、CSS の `url()` 書き換えを毎回
+行い、残りの不足分を再集計します。
 
-### 必要なファイル（38件）
+## 加えた変更
 
-| 種別 | ファイル |
-|------|----------|
-| CSS | `design.css` `mobile.css` `advanced.css` `print.css` `wpp.css` `style.css` |
-| JS | `jquery.js` `jquery-migrate.min.js` `utility.js` |
-| ロゴ・共通 | `logo.png` `loading.gif` `favicon.ico` `home-icon.png` `ogp.png` |
-| サイドアイコン | `icon-side-riko.gif` `icon-side-yoshimi.gif` `icon-side-nakamura.gif` `icon-side-yuko.gif` |
-| バナー | `bnr_naoko.gif` `bnr_nurseful.gif` |
-| 記事サムネイル | `*-640x520.png`（10件） / `*-100x100.png`（7件） / `20170825_ill21.png` |
+### 削除したもの（保存時に紛れ込んだ不要物・54件）
 
-完全な一覧は `ASSETS.txt` を参照してください。
-
-## HTML に加えた変更
-
-成形時に以下を処理しています。
-
-**削除したもの（保存時に紛れ込んだ不要物）**
-
-- Wayback Machine のツールバー一式（`BEGIN/END WAYBACK TOOLBAR INSERT`）
+- Wayback Machine のツールバー一式と、そのアセット
+  （`archive.min.css` 約240KB、`ia-topnav.min.js`、`web.css`、`styles.css`、
+  コレクション用サムネイル `americana` `etree` `tv` 等）
 - リプレイ用スクリプト（`wombat.js` `bundle-playback.js` `ruffle.js` `athena.js`）
-  と、それに紐づく `banner-styles.css` `iconochive.css`
 - archive.org のアクセス解析、および `<html>` の `--wm-toolbar-height`
 - 保存時に凍結された各 SDK の生成済み iframe（Twitter / Facebook / はてな）。
   SDK が実行時に作り直すため、残すと旧ドメイン向けの状態が残存します
 - ブラウザ拡張が `</body>` 以降に注入した DOM
 
-**書き換えたもの**
+`style.css`（Newpost Catch プラグイン・必要）と `styles.css`（Wayback 用・不要）は
+名前が紛らわしいですが、中身を確認して選別しています。
+
+### 書き換えたもの
 
 - `./ナースが教える仕事術_files/...` → `/000/assets/...`
-- Wayback のラッパー（`https://web.archive.org/web/20170928093538/...`、
-  プロトコル相対の `//web.archive.org/...` を含む）を除去
+- Wayback のラッパー（絶対 URL・プロトコル相対 `//web.archive.org/...` の両方）を除去
 - `http://nurse-riko.net/...` → `/000/...`（内部リンク 67件）
-- WordPress の `wp-content/themes|uploads/...` 配下の画像も `/000/assets/` に集約
+- **CSS 内の `url()`** も同様に `/000/assets/...` へ統一。保存された CSS には
+  Wayback 独自の書き換え（`/web/20170928095238im_/http://...`）が残っており、
+  そのままでは新ホストで解決できません
 - ソーシャルウィジェットは配信元 CDN を参照するよう復元
   （Twitter / Facebook / Pocket / はてな）
 

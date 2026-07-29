@@ -303,7 +303,7 @@ img{
 }
 
 .bubble_l:after{
-	content: url(/web/20170928093626im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bubble-top-sp.png);
+	content: url(/000/assets/bubble-top-sp.png);
 	position: absolute;
 	top: 35px;
 	left: -17px;
@@ -335,7 +335,7 @@ img{
 }
 
 .bubble_r:after{
-	content: url(/web/20170928093626im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bubble-top02-sp.png);
+	content: url(/000/assets/bubble-top02-sp.png);
 	position: absolute;
 	top: 35px;
 	right: -17px;
@@ -541,7 +541,7 @@ img.alignright{
 
 .page-top span{
 	padding-left: 20px;
-	background: url(/web/20170928093626im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-top_blue.png) 0 center no-repeat #ededed;
+	background: url(/000/assets/icon-arrow-top_blue.png) 0 center no-repeat #ededed;
 }
 
 .page-top:not(\*|*){ position: static; }/* Opera9以下 */

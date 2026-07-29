@@ -276,7 +276,7 @@ a:active{ color: #f60; }
 #container{
 	position: relative;
 	border-top: 10px solid #98cc66;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bg.gif) left center repeat;
+	background: url(/000/assets/bg.gif) left center repeat;
 }
 
 
@@ -324,13 +324,13 @@ a:active{ color: #f60; }
 
 #main-in{
 	padding-top: 1.5em;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara.png) right top no-repeat;
+	background: url(/000/assets/chara.png) right top no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
 	#main-in{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara@2x.png) right top no-repeat;
+		background: url(/000/assets/chara@2x.png) right top no-repeat;
 		-webkit-background-size: 360px 266px;
 		background-size: 360px 266px;
 	}
@@ -375,7 +375,7 @@ a:active{ color: #f60; }
 
 #breadcrumbs li a{
 	padding-right: 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-brc.gif) center right no-repeat;
+	background: url(/000/assets/icon-brc.gif) center right no-repeat;
 }
 
 
@@ -489,16 +489,16 @@ a:active{ color: #f60; }
 	padding: 15px 20px 10px 95px;
 }
 
-#main-contents h2.rank-num01{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num01.png) left 18px no-repeat; }
-#main-contents h2.rank-num02{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num02.png) left 18px no-repeat; }
-#main-contents h2.rank-num03{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num03.png) left 18px no-repeat; }
-#main-contents h2.rank-num04{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num04.png) left 18px no-repeat; }
-#main-contents h2.rank-num05{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num05.png) left 18px no-repeat; }
-#main-contents h2.rank-num06{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num06.png) left 18px no-repeat; }
-#main-contents h2.rank-num07{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num07.png) left 18px no-repeat; }
-#main-contents h2.rank-num08{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num08.png) left 18px no-repeat; }
-#main-contents h2.rank-num09{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num09.png) left 18px no-repeat; }
-#main-contents h2.rank-num10{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num10.png) left 18px no-repeat; }
+#main-contents h2.rank-num01{ background: url(/000/assets/icon-rank-num01.png) left 18px no-repeat; }
+#main-contents h2.rank-num02{ background: url(/000/assets/icon-rank-num02.png) left 18px no-repeat; }
+#main-contents h2.rank-num03{ background: url(/000/assets/icon-rank-num03.png) left 18px no-repeat; }
+#main-contents h2.rank-num04{ background: url(/000/assets/icon-rank-num04.png) left 18px no-repeat; }
+#main-contents h2.rank-num05{ background: url(/000/assets/icon-rank-num05.png) left 18px no-repeat; }
+#main-contents h2.rank-num06{ background: url(/000/assets/icon-rank-num06.png) left 18px no-repeat; }
+#main-contents h2.rank-num07{ background: url(/000/assets/icon-rank-num07.png) left 18px no-repeat; }
+#main-contents h2.rank-num08{ background: url(/000/assets/icon-rank-num08.png) left 18px no-repeat; }
+#main-contents h2.rank-num09{ background: url(/000/assets/icon-rank-num09.png) left 18px no-repeat; }
+#main-contents h2.rank-num10{ background: url(/000/assets/icon-rank-num10.png) left 18px no-repeat; }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
@@ -508,16 +508,16 @@ a:active{ color: #f60; }
 		background-size: 81px 71px;
 	}
 	
-	#main-contents h2.rank-num01{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num01@2x.png); }
-	#main-contents h2.rank-num02{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num02@2x.png); }
-	#main-contents h2.rank-num03{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num03@2x.png); }
-	#main-contents h2.rank-num04{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num04@2x.png); }
-	#main-contents h2.rank-num05{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num05@2x.png); }
-	#main-contents h2.rank-num06{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num06@2x.png); }
-	#main-contents h2.rank-num07{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num07@2x.png); }
-	#main-contents h2.rank-num08{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num08@2x.png); }
-	#main-contents h2.rank-num09{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num09@2x.png); }
-	#main-contents h2.rank-num10{ background-image: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-rank-num10@2x.png); }
+	#main-contents h2.rank-num01{ background-image: url(/000/assets/icon-rank-num01@2x.png); }
+	#main-contents h2.rank-num02{ background-image: url(/000/assets/icon-rank-num02@2x.png); }
+	#main-contents h2.rank-num03{ background-image: url(/000/assets/icon-rank-num03@2x.png); }
+	#main-contents h2.rank-num04{ background-image: url(/000/assets/icon-rank-num04@2x.png); }
+	#main-contents h2.rank-num05{ background-image: url(/000/assets/icon-rank-num05@2x.png); }
+	#main-contents h2.rank-num06{ background-image: url(/000/assets/icon-rank-num06@2x.png); }
+	#main-contents h2.rank-num07{ background-image: url(/000/assets/icon-rank-num07@2x.png); }
+	#main-contents h2.rank-num08{ background-image: url(/000/assets/icon-rank-num08@2x.png); }
+	#main-contents h2.rank-num09{ background-image: url(/000/assets/icon-rank-num09@2x.png); }
+	#main-contents h2.rank-num10{ background-image: url(/000/assets/icon-rank-num10@2x.png); }
 }
 
 #main-contents h2.rank-title:before,
@@ -639,14 +639,14 @@ a:active{ color: #f60; }
 	margin: 0 0 2.5em;
 	position: relative;
 	padding: 80px 25px 50px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bg-blockquote_top.png) 30px 25px no-repeat #eaeaea;
+	background: url(/000/assets/bg-blockquote_top.png) 30px 25px no-repeat #eaeaea;
 }
 
 #main-contents blockquote:after{
 	position: absolute;
 	right: 30px;
 	bottom: 30px;
-	content: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bg-blockquote_bottom.png);
+	content: url(/000/assets/bg-blockquote_bottom.png);
 	width: 24px;
 	height: 20px;
 }
@@ -872,7 +872,7 @@ a:active{ color: #f60; }
 	margin-bottom: 1.5em;
 	padding-top: 5px;
 	padding-left: 24px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-check01-red.png) left top no-repeat;
+	background: url(/000/assets/icon-check01-red.png) left top no-repeat;
 	list-style-type: none;
 }
 
@@ -893,20 +893,20 @@ a:active{ color: #f60; }
 .link-next a,
 .link-more a{
 	padding: 3px 0 3px 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow_r.png) 0 7px no-repeat;
 }
 .link-back a{
 	padding: 3px 0 3px 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_l.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow_l.png) 0 7px no-repeat;
 }
 
 .link-next02 a{
 	padding: 3px 0 3px 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r-red.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow_r-red.png) 0 7px no-repeat;
 }
 .link-back02 a{
 	padding: 3px 0 3px 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_l-red.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow_l-red.png) 0 7px no-repeat;
 }
 
 /*●ページネーション スタイル01*/
@@ -1006,7 +1006,7 @@ a:active{ color: #f60; }
 #main-contents .sitemap li a{
 	display: block;
 	padding: 3px 0 3px 20px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r.png) 0 5px no-repeat;
+	background: url(/000/assets/icon-arrow_r.png) 0 5px no-repeat;
 }
 
 #main-contents .sitemap ul{ margin-top: 1em; }
@@ -1014,7 +1014,7 @@ a:active{ color: #f60; }
 #main-contents .sitemap li li a{
 	padding: 0 0 0 15px;
 	border-left: none;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-menu02.png) 0 6px no-repeat;
+	background: url(/000/assets/icon-menu02.png) 0 6px no-repeat;
 }
 
 .social-box{
@@ -1081,12 +1081,12 @@ a:active{ color: #f60; }
 .chat-bubble-riko_left{
 	min-height: 202px;
 	margin-bottom: 40px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/riko_left.png) left top no-repeat;
+	background: url(/000/assets/riko_left.png) left top no-repeat;
 }
 .chat-bubble-naoko00_left{
 	min-height: 202px;
 	margin-bottom: 40px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/naoko_left.png) left top no-repeat;
+	background: url(/000/assets/naoko_left.png) left top no-repeat;
 }
 
 .chat-bubble-riko02_left,
@@ -1100,37 +1100,37 @@ a:active{ color: #f60; }
 	min-height: 127px;
 	margin-bottom: 40px;
 }
-.chat-bubble-riko02_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-riko_left.png) left top no-repeat; }
-.chat-bubble-shicho02_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-shicho_left.png) left top no-repeat; }
-.chat-bubble-nakamura02_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-nakamura_left.png) left top no-repeat; }
-.chat-bubble-naoko_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-naoko_left.png) left top no-repeat; }
-.chat-bubble-riko02_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-riko_right.png) right top no-repeat; }
-.chat-bubble-shicho02_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-shicho_right.png) right top no-repeat; }
-.chat-bubble-nakamura02_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-nakamura_right.png) right top no-repeat; }
-.chat-bubble-naoko_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-naoko_right.png) right top no-repeat; }
+.chat-bubble-riko02_left{ background: url(/000/assets/chara-riko_left.png) left top no-repeat; }
+.chat-bubble-shicho02_left{ background: url(/000/assets/chara-shicho_left.png) left top no-repeat; }
+.chat-bubble-nakamura02_left{ background: url(/000/assets/chara-nakamura_left.png) left top no-repeat; }
+.chat-bubble-naoko_left{ background: url(/000/assets/chara-naoko_left.png) left top no-repeat; }
+.chat-bubble-riko02_right{ background: url(/000/assets/chara-riko_right.png) right top no-repeat; }
+.chat-bubble-shicho02_right{ background: url(/000/assets/chara-shicho_right.png) right top no-repeat; }
+.chat-bubble-nakamura02_right{ background: url(/000/assets/chara-nakamura_right.png) right top no-repeat; }
+.chat-bubble-naoko_right{ background: url(/000/assets/chara-naoko_right.png) right top no-repeat; }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
 	
 	.chat-bubble-riko_left{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/riko_left@2x.png) left top no-repeat;
+		background: url(/000/assets/riko_left@2x.png) left top no-repeat;
 		-webkit-background-size: 87px 202px;
 		background-size: 87px 202px;
 	}
 	.chat-bubble-naoko00_left{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/naoko_left.png) left top no-repeat;
+		background: url(/000/assets/naoko_left.png) left top no-repeat;
 		-webkit-background-size: 87px 202px;
 		background-size: 87px 202px;
 	}
 	
-	.chat-bubble-riko02_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-riko_left@2x.png) left top no-repeat; }
-	.chat-bubble-shicho02_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-shicho_left@2x.png) left top no-repeat; }
-	.chat-bubble-nakamura02_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-nakamura_left@2x.png) left top no-repeat; }
-	.chat-bubble-naoko_left{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-naoko_left@2x.png) left top no-repeat; }
-	.chat-bubble-riko02_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-riko_right@2x.png) right top no-repeat; }
-	.chat-bubble-shicho02_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-shicho_right@2x.png) right top no-repeat; }
-	.chat-bubble-nakamura02_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-nakamura_right@2x.png) right top no-repeat; }
-	.chat-bubble-naoko_right{ background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-naoko_right@2x.png) right top no-repeat; }
+	.chat-bubble-riko02_left{ background: url(/000/assets/chara-riko_left@2x.png) left top no-repeat; }
+	.chat-bubble-shicho02_left{ background: url(/000/assets/chara-shicho_left@2x.png) left top no-repeat; }
+	.chat-bubble-nakamura02_left{ background: url(/000/assets/chara-nakamura_left@2x.png) left top no-repeat; }
+	.chat-bubble-naoko_left{ background: url(/000/assets/chara-naoko_left@2x.png) left top no-repeat; }
+	.chat-bubble-riko02_right{ background: url(/000/assets/chara-riko_right@2x.png) right top no-repeat; }
+	.chat-bubble-shicho02_right{ background: url(/000/assets/chara-shicho_right@2x.png) right top no-repeat; }
+	.chat-bubble-nakamura02_right{ background: url(/000/assets/chara-nakamura_right@2x.png) right top no-repeat; }
+	.chat-bubble-naoko_right{ background: url(/000/assets/chara-naoko_right@2x.png) right top no-repeat; }
 	.chat-bubble-riko02_left,
 	.chat-bubble-shicho02_left,
 	.chat-bubble-nakamura02_left,
@@ -1177,38 +1177,38 @@ a:active{ color: #f60; }
 	font-weight: bold;
 }
 
-/*.chara-man-50_laugh_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-laugh_right.png) right top no-repeat; }*/
-.chara-man-50_angry_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-angry_right.png) right top no-repeat; }
-/*.chara-man-50_laugh_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-laugh_left.png) left top no-repeat; }*/
-.chara-man-50_angry_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-angry_left.png) left top no-repeat; }
+/*.chara-man-50_laugh_right { background: url(/000/assets/chara-man-50-laugh_right.png) right top no-repeat; }*/
+.chara-man-50_angry_right { background: url(/000/assets/chara-man-50-angry_right.png) right top no-repeat; }
+/*.chara-man-50_laugh_left { background: url(/000/assets/chara-man-50-laugh_left.png) left top no-repeat; }*/
+.chara-man-50_angry_left { background: url(/000/assets/chara-man-50-angry_left.png) left top no-repeat; }
 
-.chara-man-40_laugh_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-laugh_right.png) right top no-repeat; }
-.chara-man-40_angry_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-angry_right.png) right top no-repeat; }
-.chara-man-40_laugh_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-laugh_left.png) left top no-repeat; }
-.chara-man-40_angry_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-angry_left.png) left top no-repeat; }
+.chara-man-40_laugh_right { background: url(/000/assets/chara-man-40-laugh_right.png) right top no-repeat; }
+.chara-man-40_angry_right { background: url(/000/assets/chara-man-40-angry_right.png) right top no-repeat; }
+.chara-man-40_laugh_left { background: url(/000/assets/chara-man-40-laugh_left.png) left top no-repeat; }
+.chara-man-40_angry_left { background: url(/000/assets/chara-man-40-angry_left.png) left top no-repeat; }
 
-.chara-woman-20_laugh_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-laugh_right.png) right top no-repeat; }
-.chara-woman-20_angry_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-angry_right.png) right top no-repeat; }
-.chara-woman-20_laugh_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-laugh_left.png) left top no-repeat; }
-.chara-woman-20_angry_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-angry_left.png) left top no-repeat; }
+.chara-woman-20_laugh_right { background: url(/000/assets/chara-woman-20-laugh_right.png) right top no-repeat; }
+.chara-woman-20_angry_right { background: url(/000/assets/chara-woman-20-angry_right.png) right top no-repeat; }
+.chara-woman-20_laugh_left { background: url(/000/assets/chara-woman-20-laugh_left.png) left top no-repeat; }
+.chara-woman-20_angry_left { background: url(/000/assets/chara-woman-20-angry_left.png) left top no-repeat; }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
 	
-	/*.chara-man-50_laugh_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-laugh_right@2x.png) right top no-repeat; }*/
-	.chara-man-50_angry_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-angry_right@2x.png) right top no-repeat; }
-	/*.chara-man-50_laugh_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-laugh_left@2x.png) left top no-repeat; }*/
-	.chara-man-50_angry_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-50-angry_left@2x.png) left top no-repeat; }
+	/*.chara-man-50_laugh_right { background: url(/000/assets/chara-man-50-laugh_right@2x.png) right top no-repeat; }*/
+	.chara-man-50_angry_right { background: url(/000/assets/chara-man-50-angry_right@2x.png) right top no-repeat; }
+	/*.chara-man-50_laugh_left { background: url(/000/assets/chara-man-50-laugh_left@2x.png) left top no-repeat; }*/
+	.chara-man-50_angry_left { background: url(/000/assets/chara-man-50-angry_left@2x.png) left top no-repeat; }
 	
-	.chara-man-40_laugh_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-laugh_right@2x.png) right top no-repeat; }
-	.chara-man-40_angry_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-angry_right@2x.png) right top no-repeat; }
-	.chara-man-40_laugh_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-laugh_left@2x.png) left top no-repeat; }
-	.chara-man-40_angry_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-man-40-angry_left@2x.png) left top no-repeat; }
+	.chara-man-40_laugh_right { background: url(/000/assets/chara-man-40-laugh_right@2x.png) right top no-repeat; }
+	.chara-man-40_angry_right { background: url(/000/assets/chara-man-40-angry_right@2x.png) right top no-repeat; }
+	.chara-man-40_laugh_left { background: url(/000/assets/chara-man-40-laugh_left@2x.png) left top no-repeat; }
+	.chara-man-40_angry_left { background: url(/000/assets/chara-man-40-angry_left@2x.png) left top no-repeat; }
 	
-	.chara-woman-20_laugh_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-laugh_right@2x.png) right top no-repeat; }
-	.chara-woman-20_angry_right { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-angry_right@2x.png) right top no-repeat; }
-	.chara-woman-20_laugh_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-laugh_left@2x.png) left top no-repeat; }
-	.chara-woman-20_angry_left { background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-woman-20-angry_left@2x.png) left top no-repeat; }
+	.chara-woman-20_laugh_right { background: url(/000/assets/chara-woman-20-laugh_right@2x.png) right top no-repeat; }
+	.chara-woman-20_angry_right { background: url(/000/assets/chara-woman-20-angry_right@2x.png) right top no-repeat; }
+	.chara-woman-20_laugh_left { background: url(/000/assets/chara-woman-20-laugh_left@2x.png) left top no-repeat; }
+	.chara-woman-20_angry_left { background: url(/000/assets/chara-woman-20-angry_left@2x.png) left top no-repeat; }
 	.chara-man-50_angry_right,
 	.chara-man-50_angry_left,
 	.chara-man-40_laugh_right,
@@ -1247,7 +1247,7 @@ a:active{ color: #f60; }
 }
 
 .bubble_l:after{
-	content: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bubble-top.png);
+	content: url(/000/assets/bubble-top.png);
 	position: absolute;
 	top: 45px;
 	left: -53px;
@@ -1272,7 +1272,7 @@ a:active{ color: #f60; }
 }
 
 .bubble_r:after{
-	content: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bubble-top02.png);
+	content: url(/000/assets/bubble-top02.png);
 	position: absolute;
 	top: 45px;
 	right: -53px;
@@ -1564,7 +1564,7 @@ a:active{ color: #f60; }
 
 #main-contents .reply a{
 	padding-left: 17px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r.png) 0 4px no-repeat;
+	background: url(/000/assets/icon-arrow_r.png) 0 4px no-repeat;
 }
 
 
@@ -1592,7 +1592,7 @@ ul#sitemap_list ul{ margin: 0; }
 #sitemap_list li{
 	list-style: none;
 	padding: 3px 10px 3px 20px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r.png) 2px 8px no-repeat;
+	background: url(/000/assets/icon-arrow_r.png) 2px 8px no-repeat;
 }
 
 #sitemap_list li ul{
@@ -1603,7 +1603,7 @@ ul#sitemap_list ul{ margin: 0; }
 #sitemap_list li li{
 	padding: 6px 10px 6px 15px;
 	border-left: none;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-menu02.png) 2px 12px no-repeat;
+	background: url(/000/assets/icon-menu02.png) 2px 12px no-repeat;
 }
 
 
@@ -1639,12 +1639,12 @@ ul#sitemap_list ul{ margin: 0; }
 
 #main-contents .cont-menu-wp li.nav-next a{
 	padding: 3px 0 3px 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_l.png) left 7px no-repeat;
+	background: url(/000/assets/icon-arrow_l.png) left 7px no-repeat;
 }
 
 #main-contents .cont-menu-wp li.nav-prev a{
 	padding: 3px 15px 3px 0;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r.png) right 7px no-repeat;
+	background: url(/000/assets/icon-arrow_r.png) right 7px no-repeat;
 }
 
 
@@ -1744,27 +1744,27 @@ only screen and (max-width : 640px){
 
 #main-contents .step-hand-wash li.num01{
 	padding-top: 28px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash01.png) left top no-repeat;
+	background: url(/000/assets/hand-wash01.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num02{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash02.png) left top no-repeat;
+	background: url(/000/assets/hand-wash02.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num03{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash03.png) left top no-repeat;
+	background: url(/000/assets/hand-wash03.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num04{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash04.png) left top no-repeat;
+	background: url(/000/assets/hand-wash04.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num05{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash05.png) left top no-repeat;
+	background: url(/000/assets/hand-wash05.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num06{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash06.png) left top no-repeat;
+	background: url(/000/assets/hand-wash06.png) left top no-repeat;
 }
 
 @media
@@ -1793,27 +1793,27 @@ only screen and (max-width : 640px){
 }
 
 #main-contents .step-hand-wash li.num01 span{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash-num01.png) left top no-repeat;
+	background: url(/000/assets/hand-wash-num01.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num02 span{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash-num02.png) left top no-repeat;
+	background: url(/000/assets/hand-wash-num02.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num03 span{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash-num03.png) left top no-repeat;
+	background: url(/000/assets/hand-wash-num03.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num04 span{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash-num04.png) left top no-repeat;
+	background: url(/000/assets/hand-wash-num04.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num05 span{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash-num05.png) left top no-repeat;
+	background: url(/000/assets/hand-wash-num05.png) left top no-repeat;
 }
 
 #main-contents .step-hand-wash li.num06 span{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/article018/hand-wash-num06.png) left top no-repeat;
+	background: url(/000/assets/hand-wash-num06.png) left top no-repeat;
 }
 
 /*--------------------------------------------------------
@@ -1857,17 +1857,17 @@ only screen and (max-width : 640px){
 #sidebar-in .widget-conts{
 	position: relative;
 	margin-bottom: 30px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bg-sidebar_middle.png) center repeat-y;
+	background: url(/000/assets/bg-sidebar_middle.png) center repeat-y;
 }
 
 #sidebar-in .conts-in{
 	padding-bottom: 10px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bg-sidebar_bottom.png) center bottom no-repeat;
+	background: url(/000/assets/bg-sidebar_bottom.png) center bottom no-repeat;
 }
 
 #sidebar-in .conts-cont{
 	padding: 20px 10px 10px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/bg-sidebar_top.png) center top no-repeat;
+	background: url(/000/assets/bg-sidebar_top.png) center top no-repeat;
 }
 
 #sidebar-in .conts-cont-in{
@@ -1882,14 +1882,14 @@ only screen and (max-width : 640px){
 	display: block;
 	width: 102px;
 	height: 42px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/clip.png) center top no-repeat;
+	background: url(/000/assets/clip.png) center top no-repeat;
 }
 
 .sub-column hr{ clear: both; }
 
 .sub-column h3{
 	padding: 15px 20px 15px 65px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/title/sidebar-h3-bg01.png) left bottom no-repeat #98cc66;
+	background: url(/000/assets/sidebar-h3-bg01.png) left bottom no-repeat #98cc66;
 	color: #fff; /*見出し文字の色*/
 	font-weight: bold;
 	font-size: 1.286em;
@@ -1898,21 +1898,21 @@ only screen and (max-width : 640px){
 
 /*青の見出し*/
 .sub-column .widget_recent_entries h3{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/title/sidebar-h3-bg02.png) left bottom no-repeat #63bfef;
+	background: url(/000/assets/sidebar-h3-bg02.png) left bottom no-repeat #63bfef;
 	text-shadow: 2px 2px 2px #228bdd
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
 	.sub-column h3{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/title/sidebar-h3-bg01@2x.png) left bottom no-repeat #98cc66;
+		background: url(/000/assets/sidebar-h3-bg01@2x.png) left bottom no-repeat #98cc66;
 		-webkit-background-size: 1000px 70px;
 		background-size: 1000px 70px;
 	}
 
 	/*青の見出し*/
 	.sub-column .widget_recent_entries h3{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/title/sidebar-h3-bg02@2x.png) left bottom no-repeat #63bfef;
+		background: url(/000/assets/sidebar-h3-bg02@2x.png) left bottom no-repeat #63bfef;
 		-webkit-background-size: 1000px 70px;
 		background-size: 1000px 70px;
 	}
@@ -2027,28 +2027,28 @@ only screen and (max-width : 640px){
 
 .sub-column .widget-conts ul li{
 	padding: 3px 10px 3px 20px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r.png) 2px 6px no-repeat;
+	background: url(/000/assets/icon-arrow_r.png) 2px 6px no-repeat;
 }
 
 .sub-column .widget_categories ul li{
 	padding: 3px 10px 3px 25px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-tag.png) 0 4px no-repeat;
+	background: url(/000/assets/icon-tag.png) 0 4px no-repeat;
 }
 
 .sub-column .widget-conts ul li li{
 	padding: 6px 10px 6px 15px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-menu02.png) 2px 12px no-repeat;
+	background: url(/000/assets/icon-menu02.png) 2px 12px no-repeat;
 }
 
 .sub-column .widget_categories ul li li{
 	padding: 6px 10px 6px 25px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-tag.png) 0 8px no-repeat;
+	background: url(/000/assets/icon-tag.png) 0 8px no-repeat;
 }
 
 /*青の場合*/
 .sub-column .widget_recent_entries ul li{
 	padding: 3px 10px 3px 25px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow_r_blue.png) 2px 6px no-repeat;
+	background: url(/000/assets/icon-arrow_r_blue.png) 2px 6px no-repeat;
 }
 
 
@@ -2189,13 +2189,13 @@ only screen and (max-width : 640px){
 	margin-bottom: 5px;
 	padding: 0px 0 3px;
 	padding-left: 18px;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow02.png) left 3px no-repeat;
+	background: url(/000/assets/icon-arrow02.png) left 3px no-repeat;
 }
 
 .footer-menu li li{
 	padding-left: 15px;
 	padding-top: 0;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow03.png) left 5px no-repeat;
+	background: url(/000/assets/icon-arrow03.png) left 5px no-repeat;
 }
 
 
@@ -2246,7 +2246,7 @@ only screen and (max-width : 640px){
 	border-right: 0;
 	text-decoration: none;
 	color: #333;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-top_blue.png) 14px center no-repeat #ededed;
+	background: url(/000/assets/icon-arrow-top_blue.png) 14px center no-repeat #ededed;
 }
 
 
@@ -2309,13 +2309,13 @@ only screen and (max-width : 640px){
 }
 .template-career-change #main-in{
 	padding-top: 1.5em;
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-career.png) right top no-repeat;
+	background: url(/000/assets/chara-career.png) right top no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
 	.template-career-change #main-in{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/common/chara-career@2x.png) right top no-repeat;
+		background: url(/000/assets/chara-career@2x.png) right top no-repeat;
 		-webkit-background-size: 360px 266px;
 		background-size: 360px 266px;
 	}
@@ -2384,41 +2384,41 @@ only screen and (max-width : 640px){
 .category027:after{ border-bottom: 5px solid #d23081; border-left: 5px solid #d23081; }
 
 .template-career-change .sub-column h3{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/title/sidebar-h3-bg03.png) left bottom no-repeat #ff99cc;
+	background: url(/000/assets/sidebar-h3-bg03.png) left bottom no-repeat #ff99cc;
 	text-shadow: 2px 2px 2px #cc33cc;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 2dppx){
 	.template-career-change .sub-column h3{
-		background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/title/sidebar-h3-bg03@2x.png) left bottom no-repeat #98cc66;
+		background: url(/000/assets/sidebar-h3-bg03@2x.png) left bottom no-repeat #98cc66;
 	}
 }
 
 .template-career-change .link-next a,
 .template-career-change .link-more a{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-career_r.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow-career_r.png) 0 7px no-repeat;
 }
 .template-career-change .link-back a{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-career_l.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow-career_l.png) 0 7px no-repeat;
 }
 
 .template-career-change .link-next02 a{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-career_r-red.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow-career_r-red.png) 0 7px no-repeat;
 }
-	background: url(./images/icon/icon-arrow-career_l-red.png) 0 7px no-repeat;
+	background: url(/000/assets/icon-arrow-career_l-red.png) 0 7px no-repeat;
 }
 
 .template-career-change #main-contents .reply a{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-career_r.png) 0 4px no-repeat;
+	background: url(/000/assets/icon-arrow-career_r.png) 0 4px no-repeat;
 }
 
 .template-career-change #main-contents .cont-menu-wp li.nav-next a{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-career_l.png) left 7px no-repeat;
+	background: url(/000/assets/icon-arrow-career_l.png) left 7px no-repeat;
 }
 
 .template-career-change #main-contents .cont-menu-wp li.nav-prev a{
-	background: url(/web/20170928095238im_/http://nurse-riko.net/wordpress/wp-content/themes/nurse/images/icon/icon-arrow-career_r.png) right 7px no-repeat;
+	background: url(/000/assets/icon-arrow-career_r.png) right 7px no-repeat;
 }
 
 /*●コピーライト*/

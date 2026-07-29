@@ -140,6 +140,29 @@ def rewrite_urls(doc: str) -> str:
     return doc
 
 
+def rewrite_css(text: str) -> tuple[str, set]:
+    """Point a stylesheet's url() targets at assets/ and report the leaf names.
+
+    Saved stylesheets keep Wayback's own rewriting ("/web/<ts>im_/http://...")
+    alongside theme-relative paths, neither of which resolves once the CSS is
+    served from /000/assets/.
+    """
+    wanted = set()
+
+    def repl(m: re.Match) -> str:
+        quote, url = m.group(1), m.group(2).strip()
+        if url.startswith(("data:", "http://", "https://", "//", "#")):
+            return m.group(0)
+        leaf = html.unescape(url.split("?")[0].split("#")[0]).split("/")[-1]
+        if not leaf:
+            return m.group(0)
+        wanted.add(leaf)
+        return f"url({quote}{ASSETS}/{leaf}{quote})"
+
+    text = re.sub(r"url\((['\"]?)([^)'\"]+)\1\)", repl, text)
+    return text, wanted
+
+
 def build(saved: Path, assets_src: Path | None, out: Path) -> None:
     doc = saved.read_text(encoding="utf-8", errors="replace")
     doc = strip_wayback_chrome(doc)
@@ -151,35 +174,93 @@ def build(saved: Path, assets_src: Path | None, out: Path) -> None:
     out_assets.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(doc, encoding="utf-8")
 
-    copied = 0
-    if assets_src and assets_src.is_dir():
-        for src in sorted(assets_src.iterdir()):
-            if not src.is_file():
-                continue
-            name = real_name(src.name)
-            if name in DROP_ASSETS or name in CDN:
-                continue
-            shutil.copy2(src, out_assets / name)
-            copied += 1
-
+    # The rewritten page is the authority on what ships. Anything it does not
+    # reference is save-time debris -- the Wayback toolbar alone drags in a
+    # jQuery UI bundle and a dozen collection thumbnails.
     referenced = sorted({
         m.group(1) for m in re.finditer(re.escape(ASSETS) + r"/([^\"')\s>]+)", doc)
     })
     (out / "ASSETS.txt").write_text("\n".join(referenced) + "\n", encoding="utf-8")
+    wanted = set(referenced)
+
+    # Stylesheets pull in a second tier of assets (backgrounds, icons) that the
+    # page never names, so they have to be scanned before anything is pruned.
+    css_wanted: set = set()
+    if assets_src and assets_src.is_dir():
+        for src in sorted(assets_src.iterdir()):
+            if src.is_file() and real_name(src.name) in wanted and src.suffix == ".css":
+                _, w = rewrite_css(src.read_text(encoding="utf-8", errors="replace"))
+                css_wanted |= w
+    wanted |= css_wanted
+
+    kept = pruned = 0
+    if assets_src and assets_src.is_dir():
+        in_place = assets_src.resolve() == out_assets.resolve()
+        for src in sorted(assets_src.iterdir()):
+            if not src.is_file() or src.name == ".gitkeep":
+                continue
+            name = real_name(src.name)
+            if name not in wanted:
+                if in_place:
+                    src.unlink()
+                pruned += 1
+                continue
+            dest = out_assets / name
+            if src != dest:
+                shutil.copy2(src, dest)
+                if in_place:
+                    src.unlink()
+            kept += 1
+
+        # Rewrite the shipped copies now that they are in their final home.
+        for css in sorted(out_assets.glob("*.css")):
+            text, _ = rewrite_css(css.read_text(encoding="utf-8", errors="replace"))
+            css.write_text(text, encoding="utf-8")
 
     present = {p.name for p in out_assets.iterdir() if p.is_file()}
+
+    # A save never fetches <link rel=icon>/<meta og:image> targets, so the
+    # full-size original can be absent while WordPress's resized derivative
+    # survives. Same image -- repoint rather than ship a 404.
+    substituted = []
+    for name in [n for n in referenced if n not in present]:
+        stem, dot, ext = name.rpartition(".")
+        if not dot:
+            continue
+        variant = next((p for p in sorted(present)
+                        if re.fullmatch(re.escape(stem) + r"-\d+x\d+\." + re.escape(ext), p)), None)
+        if variant:
+            doc = doc.replace(f"{ASSETS}/{name}", f"{ASSETS}/{variant}")
+            substituted.append(f"{name} -> {variant}")
+    if substituted:
+        (out / "index.html").write_text(doc, encoding="utf-8")
+        referenced = sorted({
+            m.group(1) for m in re.finditer(re.escape(ASSETS) + r"/([^\"')\s>]+)", doc)
+        })
+        (out / "ASSETS.txt").write_text("\n".join(referenced) + "\n", encoding="utf-8")
+        for s in substituted:
+            print(f"  substituted {s}")
+
     missing = [n for n in referenced if n not in present]
+    missing_css = sorted(n for n in css_wanted if n not in present)
+
+    if missing or missing_css:
+        (out / "MISSING.txt").write_text(
+            "".join(f"{n}\n" for n in missing + missing_css), encoding="utf-8")
 
     print(f"wrote {out/'index.html'} ({len(doc):,} bytes)")
-    print(f"assets copied: {copied}")
-    print(f"assets referenced: {len(referenced)}")
+    print(f"page assets: {len(referenced)} referenced, kept {kept}, pruned {pruned}")
+    print(f"css-referenced images: {len(css_wanted)}")
     for group, names in (("css", SITE_CSS), ("js", SITE_JS)):
         absent = [n for n in names if n not in present]
         if absent:
             print(f"  missing {group}: {', '.join(absent)}")
     if missing:
-        print(f"MISSING {len(missing)} file(s) — see ASSETS.txt for the full list")
-    else:
+        print(f"MISSING from page: {', '.join(missing)}")
+    if missing_css:
+        print(f"MISSING theme images ({len(missing_css)}), first 5: "
+              f"{', '.join(missing_css[:5])} ... see MISSING.txt")
+    if not (missing or missing_css):
         print("all referenced assets present")
 
 
