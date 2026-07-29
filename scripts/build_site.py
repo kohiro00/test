@@ -248,7 +248,8 @@ def build(saved: Path, assets_src: Path | None, out: Path) -> None:
         (out / "MISSING.txt").write_text(
             "".join(f"{n}\n" for n in missing + missing_css), encoding="utf-8")
 
-    print(f"wrote {out/'index.html'} ({len(doc):,} bytes)")
+    print(f"wrote {out/'index.html'} "
+          f"({len(doc.encode('utf-8')):,} bytes, {len(doc):,} chars)")
     print(f"page assets: {len(referenced)} referenced, kept {kept}, pruned {pruned}")
     print(f"css-referenced images: {len(css_wanted)}")
     for group, names in (("css", SITE_CSS), ("js", SITE_JS)):
