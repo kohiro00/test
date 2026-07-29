@@ -1,0 +1,55 @@
+/*
+Newpost Catch StyleSheet
+
+With the version up of the plug-in, so will be overwritten "style.css" file each time,
+I think how to directly edit the "style.css" file and how would you or declined.
+If you wish to apply a CSS style on its own,
+In the "/wp-content/themes/theme directory/css/" as you please create a "newpost-catch.css".
+Please the name of the file to create and "newpost-catch.css". The other is the file name, does not apply.
+
+*/
+
+#npcatch li{
+	overflow:hidden;
+	clear:both;
+	margin:0px 0px 0px;
+}
+
+#npcatch img{
+	float:left;
+	padding:5px 10px;
+}
+
+#npcatch .title{
+	width:135px;
+	float:left;
+	padding:5px 5px 5px 0px;
+}
+
+#npcatch li:hover{
+}
+
+#npcatch li:hover .title{
+}
+
+#npcatch li:hover .title a{
+}
+
+#npcatch li:hover .date{
+}
+
+/*
+     FILE ARCHIVED ON 09:57:47 Sep 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:28:55 Jul 29, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 8.449
+  load_resource: 3022.883 (2)
+  PetaboxLoader3.resolve: 2595.468 (2)
+  PetaboxLoader3.datanode: 350.233 (2)
+*/

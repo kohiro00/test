@@ -1,0 +1,30 @@
+var _____WB$wombat$assign$function_____=function(name){return (globalThis._wb_wombat && globalThis._wb_wombat.local_init && globalThis._wb_wombat.local_init(name))||globalThis[name];};if(!globalThis.__WB_pmw){globalThis.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+(function(){function e(b){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=b=="6c75a350"?("https:"==location.protocol?"https://":"http://")+"rtjs.ptengine.jp/"+b+".js":b=="2c5751c9"||b=="7ee629a5"||b=="20450a40"?("https:"==location.protocol?"https://":"http://")+"cjs.ptengine.com/"+b+".js":("https:"==location.protocol?"https://":"http://")+"js.ptengine.jp/"+b+".js";b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b);a.onerror=function(){var a=
+document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==location.protocol?"https://":"http://")+"js.ptengine.jp/ptb.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}if(!window.limit_js_flag){if(!window._pt_lt||window._pt_lt>(new Date).getTime())window._pt_lt=(new Date).getTime();var c=window._pt_sp_2?window._pt_sp_2:window._pt_pe?window._pt_pe:"";if(c){var a=c.join("");if(!(a.indexOf("setAccount")<0&&a.indexOf("setSID")<0)){for(var d=
+a=0;d<c.length;d++)if(a=c[d].indexOf(","),a>0&&(c[d].slice(0,a)=="setAccount"||c[d].slice(0,a)=="setSID")){e(c[d].slice(a+1));break}window.limit_js_flag=!0}}}})();
+
+}
+
+/*
+     FILE ARCHIVED ON 16:58:19 Sep 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:28:59 Jul 29, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 5.892
+  load_resource: 212.003 (2)
+  PetaboxLoader3.resolve: 138.992 (2)
+  PetaboxLoader3.datanode: 47.78 (2)
+*/
